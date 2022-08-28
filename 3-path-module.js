@@ -1,0 +1,15 @@
+//const os=require('os');
+
+//const { default: test } = require('node:test');
+const path=require('path')
+
+console.log(path.sep);
+
+const filepath=path.join('/content/','subfolder','test.txt')
+console.log(filepath);
+
+const base=path.basename(filepath);
+console.log((base));
+
+const absol=path.resolve(__dirname,'content','subfolder','test.txt')
+console.log(absol);
